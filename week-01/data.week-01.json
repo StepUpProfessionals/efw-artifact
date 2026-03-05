@@ -1,0 +1,83 @@
+{
+  "course": "English for Work – Professional Activation",
+  "week": 1,
+  "week_title": "Starting a Meeting",
+  "functional_focus": "Starting and opening a professional meeting in English.",
+  "outcome": "By the end of this week, learners can greet participants, start a meeting, and introduce the purpose using clear professional expressions.",
+  "tabs": [
+    {
+      "id": "greeting",
+      "title": "Greeting Participants",
+      "micro_tip": "Keep it simple and professional. A clear greeting sets the tone.",
+      "expressions": [
+        {"id":"g1","en":"Good morning, everyone.","es":"Buenos días a todos."},
+        {"id":"g2","en":"Good afternoon, everyone.","es":"Buenas tardes a todos."},
+        {"id":"g3","en":"Hello everyone, thanks for joining.","es":"Hola a todos, gracias por unirse."},
+        {"id":"g4","en":"Thank you all for being here today.","es":"Gracias a todos por estar aquí hoy."},
+        {"id":"g5","en":"It's great to see everyone here.","es":"Es un gusto verlos a todos aquí."},
+        {"id":"g6","en":"Thanks for taking the time to join this meeting.","es":"Gracias por tomarse el tiempo para unirse a esta reunión."}
+      ]
+    },
+    {
+      "id": "start",
+      "title": "Starting the Meeting",
+      "micro_tip": "Use a clear signal to begin. Short phrases work best.",
+      "expressions": [
+        {"id":"s1","en":"Let's get started.","es":"Empecemos."},
+        {"id":"s2","en":"Shall we begin?","es":"¿Empezamos?"},
+        {"id":"s3","en":"Let's begin the meeting.","es":"Comencemos la reunión."},
+        {"id":"s4","en":"I think we can start now.","es":"Creo que podemos empezar ahora."},
+        {"id":"s5","en":"Let's go ahead and start.","es":"Bueno, empecemos."},
+        {"id":"s6","en":"Let's get the meeting started.","es":"Demos inicio a la reunión."}
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "Introducing the Purpose",
+      "micro_tip": "State one clear purpose. Keep it short and specific.",
+      "expressions": [
+        {"id":"p1","en":"The purpose of today's meeting is to discuss the new project.","es":"El propósito de la reunión de hoy es hablar del nuevo proyecto."},
+        {"id":"p2","en":"Today we want to review the project progress.","es":"Hoy queremos revisar el progreso del proyecto."},
+        {"id":"p3","en":"Today's meeting is about the new marketing strategy.","es":"La reunión de hoy es sobre la nueva estrategia de marketing."},
+        {"id":"p4","en":"We are here today to talk about the next steps.","es":"Estamos aquí hoy para hablar de los próximos pasos."},
+        {"id":"p5","en":"In this meeting, we will discuss the project timeline.","es":"En esta reunión, hablaremos del cronograma del proyecto."},
+        {"id":"p6","en":"The goal of today's meeting is to share some updates.","es":"El objetivo de la reunión de hoy es compartir algunas actualizaciones."}
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "story1",
+      "title": "Internal Team Meeting",
+      "text": [
+        "Maria enters the meeting room and looks at the team.",
+        "She smiles and says, "Good morning, everyone. Thanks for joining."",
+        "After everyone sits down, she continues, "Alright, let's get started."",
+        "She opens her laptop and says, "The purpose of today's meeting is to review our project progress and discuss the next steps."",
+        "The team members nod and prepare to share their updates."
+      ]
+    },
+    {
+      "id": "story2",
+      "title": "Meeting with a Client",
+      "text": [
+        "David begins the meeting with the client.",
+        "He says, "Good afternoon, everyone. Thank you for being here today."",
+        "He looks around the room and adds, "Shall we begin?"",
+        "Then he explains the objective of the meeting.",
+        ""Today we want to discuss the new marketing strategy and review the project timeline."",
+        "The client listens carefully and opens their notebook to take notes."
+      ]
+    }
+  ],
+  "ui_copy": {
+    "title": "Guided Meeting Opener Builder",
+    "subtitle": "Build a professional meeting opener step by step using this week's expressions.",
+    "step_labels": ["Choose a greeting", "Start the meeting", "Introduce the purpose"],
+    "cta_build": "Build my meeting opener",
+    "cta_swap": "Swap one line",
+    "cta_reset": "Start over",
+    "context_label": "See it in context",
+    "output_label": "Your meeting opener"
+  }
+}

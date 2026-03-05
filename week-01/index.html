@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EFW Week 1 – Starting a Meeting. Build a professional meeting opener using this week's expressions.">
+  <title>EFW · Week 1: Starting a Meeting – Step Up</title>
+
+  <!-- Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Shared base styles -->
+  <link rel="stylesheet" href="../shared/base.css">
+  <!-- Week-specific styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Accessibility: skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ── Header ── -->
+  <header class="artifact-header" role="banner">
+    <div class="header-inner">
+      <span class="course-label" id="course-label">English for Work – Professional Activation</span>
+      <div class="week-badge" id="week-badge">Week 1</div>
+    </div>
+    <h1 class="week-title" id="week-title">Starting a Meeting</h1>
+    <p class="week-outcome" id="week-outcome"></p>
+  </header>
+
+  <!-- ── Main ── -->
+  <main id="main-content" class="artifact-main">
+
+    <!-- ── Builder Section ── -->
+    <section class="builder-section" aria-labelledby="ui-title">
+
+      <div class="section-intro">
+        <h2 class="section-title" id="ui-title">Guided Meeting Opener Builder</h2>
+        <p class="section-subtitle" id="ui-subtitle">
+          Build a professional meeting opener step by step using this week's expressions.
+        </p>
+      </div>
+
+      <!-- Steps (rendered by app.js) -->
+      <div class="steps-container" id="steps-container" aria-label="Builder steps">
+        <!-- Loading state -->
+        <p style="padding: 2rem; color: var(--gray-400); font-size: 0.875rem; text-align:center;">
+          Loading activity…
+        </p>
+      </div>
+
+      <!-- Build CTA -->
+      <div class="build-bar">
+        <button
+          class="btn-primary"
+          id="btn-build"
+          disabled
+          aria-disabled="true"
+          aria-describedby="build-hint"
+        >
+          <span class="btn-icon" aria-hidden="true">▶</span>
+          <span id="btn-build-label">Build my meeting opener</span>
+        </button>
+        <p class="build-hint" id="build-hint" role="status">
+          Select one expression from each step to continue.
+        </p>
+      </div>
+
+    </section><!-- /builder-section -->
+
+
+    <!-- ── Output Section (hidden until build) ── -->
+    <section
+      class="output-section hidden"
+      id="output-section"
+      aria-label="Your meeting opener"
+      aria-live="polite"
+    >
+
+      <!-- Script header -->
+      <div class="output-header">
+        <h2 class="output-title" id="output-label-title">Your Meeting Opener</h2>
+      </div>
+
+      <!-- Assembled opener lines (rendered by app.js) -->
+      <div class="opener-script" id="opener-script" aria-label="Assembled meeting opener script">
+      </div>
+
+      <!-- Why it works tip (rendered by app.js) -->
+      <div class="why-it-works" id="why-it-works" role="note" aria-label="Why it works">
+      </div>
+
+      <!-- ── Swap and Compare ── -->
+      <div class="swap-section" aria-labelledby="swap-heading">
+        <h3 class="swap-title" id="swap-heading">Swap and Compare</h3>
+        <p class="swap-desc">
+          Select a category below, then pick a different expression and notice how your opener changes.
+        </p>
+        <!-- Category tabs (rendered by app.js) -->
+        <div class="swap-tabs" id="swap-tabs" role="group" aria-label="Swap category"></div>
+        <!-- Alternative expressions (rendered by app.js) -->
+        <div class="swap-options" id="swap-options" role="group" aria-label="Alternative expressions"></div>
+      </div>
+
+      <!-- ── See it in Context ── -->
+      <div class="context-section" aria-labelledby="context-heading">
+        <h3 class="context-title" id="context-heading context-label">See it in Context</h3>
+        <p class="context-desc">
+          Find your chosen expressions highlighted in real workplace conversations.
+        </p>
+        <!-- Story tab buttons (rendered by app.js) -->
+        <div
+          class="story-tabs"
+          id="story-tabs"
+          role="tablist"
+          aria-label="Workplace story examples"
+        ></div>
+        <!-- Story text panels (rendered by app.js) -->
+        <div id="story-content"></div>
+      </div>
+
+      <!-- ── Reset ── -->
+      <div class="reset-bar">
+        <button class="btn-ghost" id="btn-reset" aria-label="Start over and clear all selections">
+          ↺ Start over
+        </button>
+      </div>
+
+    </section><!-- /output-section -->
+
+  </main><!-- /main -->
+
+  <!-- ── Footer ── -->
+  <footer class="artifact-footer" role="contentinfo">
+    <span>Step Up Professional Language Services &middot; EFW Week 1 &middot; Starting a Meeting</span>
+  </footer>
+
+  <!-- Shared utilities (escapeHtml, highlightAll, announce) -->
+  <script src="../shared/utils.js"></script>
+  <!-- Week-specific application logic -->
+  <script src="../shared/app.js"></script>
+
+</body>
+</html>

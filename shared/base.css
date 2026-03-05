@@ -1,0 +1,126 @@
+/* ================================================
+   EFW Artifacts — Shared Base Styles
+   Step Up Professional Language Services
+   ================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Brand Colors */
+  --navy:        #00274D;
+  --navy-dark:   #001a35;
+  --navy-mid:    #003a70;
+  --navy-light:  #e8eef5;
+  --teal:        #008080;
+  --teal-dark:   #006666;
+  --teal-mid:    #4db3b3;
+  --teal-light:  #e0f4f4;
+  --red:         #FF4C4C;
+  --red-light:   #fff0f0;
+
+  /* Neutrals */
+  --white:       #ffffff;
+  --gray-50:     #f7f9fb;
+  --gray-100:    #f0f3f6;
+  --gray-200:    #e2e8ee;
+  --gray-300:    #cdd5de;
+  --gray-400:    #9aaabb;
+  --gray-500:    #6a7f96;
+  --gray-700:    #3a4f62;
+  --gray-900:    #1a2a38;
+
+  /* Typography */
+  --font: 'Montserrat', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-size-xs:   0.75rem;
+  --font-size-sm:   0.85rem;
+  --font-size-base: 1rem;
+  --font-size-md:   1.0625rem;
+  --font-size-lg:   1.25rem;
+  --font-size-xl:   1.5rem;
+  --font-size-2xl:  1.875rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  /* Radii */
+  --radius-sm:  6px;
+  --radius:     10px;
+  --radius-md:  14px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 4px rgba(0,39,77,0.08);
+  --shadow:     0 2px 12px rgba(0,39,77,0.10);
+  --shadow-md:  0 4px 24px rgba(0,39,77,0.14);
+  --shadow-lg:  0 8px 40px rgba(0,39,77,0.18);
+
+  /* Transitions */
+  --transition: 0.16s ease;
+  --transition-md: 0.25s ease;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--gray-50);
+  color: var(--gray-900);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Skip to main content (accessibility) */
+.skip-link {
+  position: absolute;
+  top: -120%;
+  left: 1rem;
+  background: var(--navy);
+  color: var(--white);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 9999;
+  transition: top var(--transition);
+}
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+/* Utilities */
+.hidden { display: none !important; }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 2px;
+}
